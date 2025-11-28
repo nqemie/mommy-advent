@@ -339,6 +339,14 @@ body {
     max-width: 100%;
 }
 
+.gift-photo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
 /* Popup message secret */
 .message-overlay {
     display: none;
