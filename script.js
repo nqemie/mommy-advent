@@ -100,23 +100,23 @@ stars.forEach(star => {
             return;
         }
         
-        // Si la case est déverrouillée, afficher le cadeau
-        const giftText = gifts[day];
-        
+        // Si la case est déverrouillée, afficher la photo
+        const fileName = gifts[day];
+
         popupGift.innerHTML = '';
-        
+
         const giftCard = document.createElement('div');
         giftCard.className = 'gift-card';
-        
-        const giftTextElement = document.createElement('p');
-        giftTextElement.className = 'gift-text';
-        giftTextElement.textContent = giftText;
-        
-        giftCard.appendChild(giftTextElement);
+
+        const img = document.createElement('img');
+        img.src = `images/maman/${fileName}`;
+        img.className = 'gift-photo';
+
+        giftCard.appendChild(img);
         popupGift.appendChild(giftCard);
-        
+
         popup.classList.add('active');
-    });
+
 });
 
 // Fermer le popup cadeau
