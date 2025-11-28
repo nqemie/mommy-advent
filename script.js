@@ -7,33 +7,34 @@ const lockedPopup = document.getElementById('lockedPopup');
 const closeLocked = document.getElementById('closeLocked');
 const countdownElement = document.getElementById('countdown');
 
-// Textes des cadeaux
+// Photos pour Maman (une par jour)
 const gifts = {
-    1: "Pleins de bêtises pour manger à Metz",
-    2: "Bon pour une soirée coquillettes",
-    3: "Massage de 30 minutes par moi",
-    4: "Bon pour une soirée \"IT takes Two\"",
-    5: "Soirée chocolat chaud, Pop Corn et film de ton choix",
-    6: "Bon pour un petit déjeuner au lit",
-    7: "Encore des bêtises pour dans le train",
-    8: "Un livre sur les randonnées",
-    9: "Un appareil photo jetable comme ça tu peux prendre autant de photos que tu veux",
-    10: "Une petite broderie",
-    11: "Bon pour une journée où je ne touche pas à mon téléphone",
-    12: "Bon pour une soirée où tu m'apprends à jouer à LoL",
-    13: "Carte cadeau Steam 10-20€",
-    14: "Livre de rando pour être un vrai randonneur",
-    15: "Soirée Pépé Chicken Tenders",
-    16: "Une autre soirée chocolat chaud, films & pop corn",
-    17: "Bon pour une rando surprise",
-    18: "Brunch maison pancake, bacon, etc",
-    19: "Minecraft date night",
-    20: "Massage tout nu",
-    21: "Un aller retour en train Paris-Metz",
-    22: "Soirée/Après-midi gaming",
-    23: "Un beau bouquet pour une belle princesse",
-    24: "Une super gourde et d'autres cadeaux à découvrir plus tard"
+    1: "maman-1.jpg",
+    2: "maman-2.jpg",
+    3: "maman-3.jpg",
+    4: "maman-4.jpg",
+    5: "maman-5.jpg",
+    6: "maman-6.jpg",
+    7: "maman-7.jpg",
+    8: "maman-8.jpg",
+    9: "maman-9.jpg",
+    10: "maman-10.jpg",
+    11: "maman-11.jpg",
+    12: "maman-12.jpg",
+    13: "maman-13.jpg",
+    14: "maman-14.jpg",
+    15: "maman-15.jpg",
+    16: "maman-16.jpg",
+    17: "maman-17.jpg",
+    18: "maman-18.jpg",
+    19: "maman-19.jpg",
+    20: "maman-20.jpg",
+    21: "maman-21.jpg",
+    22: "maman-22.jpg",
+    23: "maman-23.jpg",
+    24: "maman-24.jpg"
 };
+
 
 // Fonction pour vérifier si une case peut être ouverte
 function canOpenDay(day) {
