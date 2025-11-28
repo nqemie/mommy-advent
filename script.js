@@ -43,12 +43,12 @@ function canOpenDay(day) {
 
     // ICI tu as mis 10 pour tester en novembre.
     // Pour décembre seulement, remets 11.
-    if (currentMonth === 10) {
-        const unlockDate = new Date(currentYear, 10, day, 0, 0, 0); 
+    if (currentMonth === 11) {
+        const unlockDate = new Date(currentYear, 11, day, 0, 0, 0); 
         return now >= unlockDate;
     }
 
-    if (currentMonth > 10 || (currentMonth === 0 && now.getFullYear() > currentYear)) {
+    if (currentMonth > 11 || (currentMonth === 0 && now.getFullYear() > currentYear)) {
         return true;
     }
 
